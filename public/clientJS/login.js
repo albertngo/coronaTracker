@@ -9,7 +9,7 @@ let nameField = document.querySelector(".nameField");
 let emailLabel = document.querySelector(".emailField label");
 
 signupBtn.addEventListener("click", ()=>{
-    signupBtn.style.backgroundColor = "rgba(250, 128, 114, 0.411)"
+    signupBtn.style.backgroundColor = "rgba(88, 96, 107, 0.616)"
     loginBtn.style.backgroundColor = "unset"
 
     submitBtn.value = "Sign-up"; 
@@ -21,7 +21,7 @@ signupBtn.addEventListener("click", ()=>{
 })
 
 loginBtn.addEventListener("click", ()=>{
-    loginBtn.style.backgroundColor = "rgba(250, 128, 114, 0.411)"
+    loginBtn.style.backgroundColor = "rgba(88, 96, 107, 0.616)"
     signupBtn.style.backgroundColor = "unset"
 
     email.style.border = "";

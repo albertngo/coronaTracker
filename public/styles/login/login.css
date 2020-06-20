@@ -2,8 +2,9 @@ body {
   height: 400px;
   margin: 0;
   padding: 0;
-  background-color: rgba(244, 165, 96, 0.479);
+  background-color: #737f91;
   position: relative;
+  font-size: 1.2em;
 }
 
 .loginSignup-container {
@@ -15,8 +16,8 @@ body {
   padding: 2em 0;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
-  -webkit-box-shadow: salmon 6px 6px;
-          box-shadow: salmon 6px 6px;
+  -webkit-box-shadow: #58606b 6px 6px;
+          box-shadow: #58606b 6px 6px;
   max-width: 800px;
 }
 
@@ -40,7 +41,7 @@ body {
 }
 
 .loginSignup-container .signupBtn {
-  background-color: rgba(250, 128, 114, 0.411);
+  background-color: rgba(88, 96, 107, 0.616);
 }
 
 label {
