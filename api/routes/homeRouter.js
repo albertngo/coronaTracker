@@ -5,7 +5,7 @@ let router = express.Router();
 router.get("/", (req,resp)=>{
 
 
-    
+
 
 
 
@@ -13,3 +13,6 @@ router.get("/", (req,resp)=>{
 
 
 })
+
+
+module.exports = router;

@@ -1,0 +1,99 @@
+body {
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(244, 165, 96, 0.479);
+  position: relative;
+}
+
+.loginSignup-container {
+  margin: 30vh auto 0 auto;
+  width: 70%;
+  border: 1px solid black;
+  padding: 1em;
+  position: relative;
+  padding: 2em 0;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  -webkit-box-shadow: salmon 6px 6px;
+          box-shadow: salmon 6px 6px;
+  max-width: 800px;
+}
+
+.loginSignup-container .nav {
+  position: absolute;
+  top: -2.2em;
+}
+
+.loginSignup-container .nav a {
+  padding: 1em;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  border-top: 1px  solid black;
+  border-left: 1px  solid black;
+  border-right: 1px  solid black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loginSignup-container .signupBtn {
+  background-color: rgba(250, 128, 114, 0.411);
+}
+
+label {
+  display: block;
+  padding-bottom: .2em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.pwField label, .typeField label, .emailField label {
+  margin-top: 1em;
+}
+
+.typeField label {
+  display: inline-block;
+}
+
+#submit {
+  margin-top: 1em;
+}
+
+.inputFields {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.inputFields input {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+}
+
+.message-container {
+  max-width: 800px;
+  width: 70%;
+  margin: 2em auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.message-container .message {
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  border-top: black double 2px;
+  border-bottom: black double 2px;
+}
+/*# sourceMappingURL=login.css.map */

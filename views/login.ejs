@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login/login.css">
+    <title>Login/Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<div class="loginSignup-container">
+
+    <div class = "nav">
+        <a class="signupBtn">Sign-up</a>
+        <a class="loginBtn">Login</a>
+    </div>
+
+ 
+    
+
+    <form onsubmit="return false;"; action="/login/newUser" class="inputFields">
+        <div class=nameField>
+            <label for="name" >Name: </label>
+            <input id="name" type = "text" name="name">
+        </div>
+        <div class="emailField">
+            <label for="email" >Email: </label>
+            <input id="email" type = "email" name="email"placeholder="Required">
+        </div>
+        <div class="pwField">
+            <label for="password">Password: </label>
+        <input id="password" type = "password" name="password" placeholder="Required">
+        </div>
+
+
+        
+        <input id="submit" type="submit" value="Sign-up" formmethod="POST">
+        
+    </form>
+
+   
+</div>
+
+<div class="message-container">
+    <h1 class="message">User Created! You can now login</h1>
+    
+</div>
+
+
+<script type="module" src="../clientJS/login.js"></script>
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
