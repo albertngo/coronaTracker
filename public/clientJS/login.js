@@ -117,7 +117,7 @@ submitBtn.addEventListener("click", (event)=>{
                     message.children[0].innerHTML = data.message;
                 } else{
                     console.log("Success")
-                    window.location = "/salepage"
+                    window.location = "/home"
                 }
             })
             .catch(error=>{

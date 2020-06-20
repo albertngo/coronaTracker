@@ -1,0 +1,160 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color: rgb(115, 127, 145)
+}
+
+ul,li{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+
+}
+
+//=====================================separate module
+
+.navigation{
+    position: relative;
+    h1{
+        margin-left: 1em;
+        font-size: 1.5em;
+    }
+    
+    .arrow {
+        width:30px;
+        height: 5px;
+        display:block;
+        background-color: black;
+        position: relative;
+        top:-40px;
+        right:10px;
+        float:right;
+        cursor: pointer;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+
+
+        &::before{
+
+            display:block;
+            background-color: black;
+            width:30px;
+            height: 5px;
+            content:"";
+            position: absolute;
+            top:-10px;
+
+        }
+    
+        &::after{
+
+            display:block;
+            background-color: black;
+            width:30px;
+            height: 5px;
+            content:"";
+            position: absolute;
+            top:10px;
+
+        }
+    }
+
+    ul{
+        position:absolute;
+        width:100%;
+        right:-98vw;
+        top:109px;
+        transition: all .3s ease-in-out;
+        background-color: rgb(105, 104, 104);
+    }
+    li{
+        padding:1em;
+        font-size: 1.5em;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(161, 161, 161)
+        }
+    }
+}
+
+//===========================
+.title{
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width:80%;
+    margin:0 auto;
+    // border: 1px solid black;
+  
+    text-align: center;
+
+    .sidebar{
+        background-color: #8491A3;
+        border-radius: 10px;
+    }
+    .title{
+        text-decoration: underline;
+    }
+    .sidebar-info h1{
+        font-size: 3em;
+        margin-bottom: 0em;
+    }
+    
+    .confirmed h1{
+        color: #87D68D;
+    }
+
+    .active h1{
+        color: yellow
+    }
+
+    .deceased h1{
+        color:#EE6055;
+    }
+    .recovered h1{
+        color: rgb(24, 212, 40);
+    }
+
+    .sidebar-info h2{
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        margin-top: .5em;
+    }
+}
+
+//========================content
+
+.content{
+    background-color: #8491A3;
+    margin-top: 2em;
+    border-radius: 10px;
+
+    .top-bar{
+        
+        margin-left: 1em;
+        h1{
+            text-decoration: underline;
+        }
+            
+    
+        display:flex;
+        align-items: center;
+        .search{
+            margin-left: auto;
+            margin-right: 1em;
+        }
+    }
+
+    .table{
+        width:100%;
+        height:500px;
+    }
+}

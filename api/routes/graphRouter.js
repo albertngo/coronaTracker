@@ -4,7 +4,7 @@ let router = express.Router();
 
 router.get("/", (req,resp)=>{
 
-    resp.render("home");
+    resp.render("graph");
 
 })
 
