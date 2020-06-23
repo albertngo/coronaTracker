@@ -1,1 +1,28 @@
-@import "../module"
+@import "../module";
+@import "../mixin";
+
+table{
+    width:90%;
+    margin:0 auto;
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+
+}
+
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:.5em;
+    
+}
+
+.statTable tr:nth-child(even){
+    background-color: rgba(112, 124, 139, 0.644);
+}
+
+.statTable tr:hover {
+    background-color: rgb(93, 104, 119);
+}

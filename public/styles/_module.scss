@@ -94,11 +94,12 @@ ul,li{
     margin:0 auto;
     // border: 1px solid black;
   
-    text-align: center;
+    
 
     .sidebar{
         background-color: #8491A3;
         border-radius: 10px;
+        text-align: center;
     }
     .title{
         text-decoration: underline;
@@ -136,6 +137,7 @@ ul,li{
     background-color: #8491A3;
     margin-top: 2em;
     border-radius: 10px;
+    min-height: 300px;
 
     .top-bar{
         
