@@ -3,6 +3,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: #737f91;
+  min-width: 400px;
 }
 
 ul, li {
@@ -20,6 +21,15 @@ ul, li {
   font-size: 1.5em;
 }
 
+@media (min-width: 1300px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid black;
+  }
+}
+
 .navigation .arrow {
   width: 30px;
   height: 5px;
@@ -30,6 +40,12 @@ ul, li {
   right: 10px;
   float: right;
   cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+  .navigation .arrow {
+    display: none;
+  }
 }
 
 .navigation .arrow:hover {
@@ -65,6 +81,17 @@ ul, li {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: #696868;
+}
+
+@media (min-width: 1300px) {
+  .navigation ul {
+    all: unset;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+  }
 }
 
 .navigation li {
@@ -162,6 +189,8 @@ ul, li {
 table {
   width: 90%;
   margin: 0 auto;
+  table-layout: fixed;
+  min-width: 200px;
 }
 
 table a {
@@ -175,11 +204,42 @@ table, th, td {
   padding: .5em;
 }
 
+@media (min-width: 1300px) {
+  table, th, td {
+    font-size: 1.1em;
+  }
+}
+
 .statTable tr:nth-child(even) {
   background-color: rgba(112, 124, 139, 0.644);
 }
 
 .statTable tr:hover {
   background-color: #5d6877;
+}
+
+table .confirmed, table .confirmedChng {
+  color: #217428;
+  font-weight: bold;
+}
+
+table .deceased, table .deceasedChng {
+  color: #92180f;
+  font-weight: bold;
+}
+
+table .recovered {
+  color: #095a10;
+  font-weight: bold;
+}
+
+table .confirmedChng, table .deceasedChng {
+  font-weight: unset;
+}
+
+@media screen and (max-width: 750px) {
+  .confirmedChng, .deceasedChng, .changes {
+    display: none;
+  }
 }
 /*# sourceMappingURL=home.css.map */

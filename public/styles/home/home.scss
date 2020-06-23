@@ -4,7 +4,8 @@
 table{
     width:90%;
     margin:0 auto;
-
+    table-layout: fixed;
+    min-width:200px;
     a{
         text-decoration: none;
         color:black;
@@ -17,6 +18,11 @@ table, th,td{
     border-collapse: collapse;
     padding:.5em;
     
+
+    @include display($display){
+        font-size: 1.1em;
+    }
+    
 }
 
 .statTable tr:nth-child(even){
@@ -25,4 +31,33 @@ table, th,td{
 
 .statTable tr:hover {
     background-color: rgb(93, 104, 119);
+}
+
+//table colors
+
+table .confirmed, table .confirmedChng{
+    color: #217428;
+    font-weight: bold;
+}
+
+table .deceased, table .deceasedChng{
+    color:#92180f;
+    font-weight: bold;
+}
+
+table .recovered{
+    color: #095a10;
+    font-weight: bold;
+}
+
+table .confirmedChng, table .deceasedChng{
+    font-weight: unset;
+}
+
+@media screen and (max-width: 750px){
+    .confirmedChng, .deceasedChng, .changes{
+        display:none;
+    }
+
+
 }
