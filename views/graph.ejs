@@ -4,9 +4,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home/home.css">
+    <link rel="stylesheet" href="../styles/graph/graph.css">
     <title>Corona Virus Tracker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
+    
+    
 </head>
 
 <body>
@@ -18,7 +22,7 @@
     <ul>
         <li class = "home">Home</li>
         <li class = "graph">Graph</li>
-        <li class = "learnMore">Learn More</li>
+       
     </ul>
     
 </nav>
@@ -27,21 +31,25 @@
     
     
     <div class = "sidebar">
-        <h1 class="country title">CANADA</h1>
+        <a class = "location">Use my Location...</a>
+        <select class="countrySelect">
+            <% for (let country of countryList){ %>
+                <option><%= country%></option>
+            <%}%>
+        </select>
+
+      
         <div class="sidebar-info confirmed">
-            <h1>124,324</h1>
+            <h1></h1>
             <h2>Confirmed</h2>
         </div>
         <div class="sidebar-info deceased">
-            <h1>32,143,234</h1>
+            <h1></h1>
             <h2>Deceased</h2>
         </div>
-        <div class="sidebar-info active">
-            <h1>43,252,432</h1>
-            <h2>Active</h2>
-        </div>
+
         <div class="sidebar-info recovered" >
-            <h1>321,432,312</h1>
+            <h1></h1>
             <h2>Recovered</h2>
         </div>
     </div>
@@ -50,10 +58,10 @@
 
         <div class="top-bar">
             <h1>Country Graph</h1>
-            <input class = "search" type="text" placeholder="search">
         </div>
-    <div class="table">
-        
+    <div class="table graph">
+
+        <canvas class="myChart"></canvas>
 
     </div>
 

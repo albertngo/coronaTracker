@@ -120,14 +120,26 @@ ul,li{
     width:80%;
     margin:0 auto;
     // border: 1px solid black;
-  
+
+    @include display($display){
+        grid-template-columns: 1fr 3fr;
+        gap: 2em;
+    }
     
 
     .sidebar{
         background-color: #8491A3;
         border-radius: 10px;
         text-align: center;
-    }
+
+        @include display($display){
+            height:min-content;
+            min-width:300px;
+        }
+        
+
+        }
+    
     .title{
         text-decoration: underline;
     }
@@ -140,10 +152,7 @@ ul,li{
     
     .confirmed h1{
         color: #87D68D;
-    }
 
-    .active h1{
-        color: yellow
     }
 
     .deceased h1{
@@ -167,10 +176,18 @@ ul,li{
     margin-top: 2em;
     border-radius: 10px;
     min-height: 300px;
+
+    @include display($display){
+        margin:unset;
+    }
     
+    .graph{
+        width: 90%;
+    }
     .top-bar{
+        width:90%;
+        margin:0 auto;
         
-        margin-left: 1em;
         h1{
             text-decoration: underline;
         }
@@ -180,13 +197,17 @@ ul,li{
         align-items: center;
         .search{
             margin-left: auto;
-            margin-right: 1em;
+            
         }
     }
 
     .table{
-        width:100%;
-        height:500px;
+        // width:100%;
+
+        // width:80vw;
+        position:relative;
         
     }
 }
+
+

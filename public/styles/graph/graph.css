@@ -208,60 +208,50 @@ ul, li {
   position: relative;
 }
 
-table {
-  width: 90%;
-  margin: 0 auto;
-  table-layout: fixed;
-  min-width: 200px;
-}
-
-table a {
-  text-decoration: none;
-  color: black;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+.countrySelect {
   padding: .5em;
+  width: 50%;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: .5em;
+  font-size: 1.5em;
+  letter-spacing: .3em;
+  margin-top: .5em;
+  background-color: rgba(148, 148, 148, 0);
 }
 
 @media (min-width: 1300px) {
-  table, th, td {
-    font-size: 1.1em;
+  .countrySelect {
+    font-size: 1em;
+    padding: .5em;
+    width: 80%;
+    margin-top: 1em;
   }
 }
 
-.statTable tr:nth-child(even) {
-  background-color: rgba(112, 124, 139, 0.644);
+.table {
+  margin: 0 auto;
 }
 
-.statTable tr:hover {
-  background-color: #5d6877;
+.location {
+  cursor: pointer;
+  width: 20%;
+  display: block;
+  margin: 2em auto 0 auto;
+  padding: .2em;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  border-radius: .3em;
 }
 
-table .confirmed, table .confirmedChng {
-  color: #217428;
-  font-weight: bold;
+.location:hover {
+  background-color: rgba(255, 235, 205, 0.555);
 }
 
-table .deceased, table .deceasedChng {
-  color: #92180f;
-  font-weight: bold;
-}
-
-table .recovered {
-  color: #095a10;
-  font-weight: bold;
-}
-
-table .confirmedChng, table .deceasedChng {
-  font-weight: unset;
-}
-
-@media screen and (max-width: 750px) {
-  .confirmedChng, .deceasedChng, .changes {
-    display: none;
+@media (min-width: 1300px) {
+  .location {
+    width: 50%;
   }
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=graph.css.map */

@@ -31,7 +31,7 @@ window.addEventListener("resize",()=>{
 //navigation
 let homeBtn = document.querySelector(".home");
 let graphBtn = document.querySelector(".graph");
-let learnBtn = document.querySelector(".learnMore");
+
 
 
 homeBtn.addEventListener("click", ()=>{
@@ -40,10 +40,6 @@ homeBtn.addEventListener("click", ()=>{
 })
 graphBtn.addEventListener("click", ()=>{
     window.location = "/graph"
-
-})
-learnBtn.addEventListener("click", ()=>{
-    window.location = "/more"
 
 })
 
